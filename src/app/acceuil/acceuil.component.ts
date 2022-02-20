@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Camera, CameraOptions } from '@awesome-cordova-plugins/camera/ngx';
+
 
 @Component({
   selector: 'app-acceuil',
@@ -7,8 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AcceuilComponent implements OnInit {
 
-  constructor() { }
+imageURL;
 
-  ngOnInit() {}
+  constructor(private camera: Camera) { }
+
+  ngOnInit() {
+}
+
+getCamera(){
+
+}
+
+getGallery(){
+  
+}
 
 }

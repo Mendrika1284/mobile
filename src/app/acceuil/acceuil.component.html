@@ -1,3 +1,43 @@
-<p>
-  acceuil works!
-</p>
+
+<ion-content [fullscreen]="true">
+<ion-toolbar color="secondary">
+  <ion-buttons slot="secondary">
+    <ion-button>
+      <ion-icon slot="icon-only" name="person-circle"></ion-icon>
+    </ion-button>
+    <ion-button>
+      <ion-icon slot="icon-only" name="search"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+  <ion-buttons slot="primary">
+    <ion-button color="primary">
+      <ion-icon slot="icon-only" ios="ellipsis-horizontal" md="ellipsis-vertical"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+  <ion-title>Secondary Toolbar</ion-title>
+</ion-toolbar>
+
+    <center>
+      <h1>Envoie Signalement</h1>
+      <ion-item>
+        <ion-label position="floating">Descriptions</ion-label>
+        <ion-input></ion-input>
+        </ion-item>
+
+
+ <ion-item>
+    <ion-label>Type</ion-label>
+    <ion-select [interfaceOptions]="customActionSheetOptions" interface="action-sheet" placeholder="...">
+      <ion-select-option value="red">Feu de brousse</ion-select-option>
+      <ion-select-option value="purple">Secheresse</ion-select-option>
+      <ion-select-option value="yellow">Dechets</ion-select-option>
+      <ion-select-option value="orange">Maladie</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <img src="{{imageURL}}" heigth="200" width="200">
+  <ion-button (click) ="getCamera()">Prendre Photo</ion-button>
+  <ion-button (click) ="getGallery()">Voir Gallerie</ion-button>
+
+    </center>
+</ion-content>
