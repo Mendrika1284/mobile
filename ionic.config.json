@@ -1,5 +1,6 @@
 {
   "name": "MobilProject",
+  "name": "login-signup-ui",
   "integrations": {
     "capacitor": {}
   },

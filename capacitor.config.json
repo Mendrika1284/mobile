@@ -1,6 +1,7 @@
 {
 	"appId": "io.ionic.starter",
 	"appName": "MobilProject",
+	"appName": "login-signup-ui",
 	"webDir": "www",
 	"bundledWebRuntime": false
 }
